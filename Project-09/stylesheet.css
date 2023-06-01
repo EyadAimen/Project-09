@@ -1,0 +1,339 @@
+/* Just for making going to a fragment is smooth */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* importing the font family */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+/* Transition for the whole page on load */
+@keyframes transitioIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+
+        transform: rotateX(0deg);
+
+    }
+} 
+
+body{
+    /* Applying the keyframe */
+    animation: transitioIn 500ms;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1em;
+    /* background-color: hsl(13, 100%, 96%); */
+    background-image: url(bg-simplify-section-desktop-home.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    /* background-size: 200%; */
+}
+
+
+h1,h2,h3{
+    color: hsl(228, 39%, 23%);
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 3em;
+}
+
+p{
+    color: hsl(227, 12%, 61%);
+}
+
+a{
+    color: hsl(233, 12%, 13%);
+    font-size: 0.8750em;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a:hover{
+    color: hsl(227, 12%, 61%);
+}
+
+button{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: hsl(0, 0%, 98%);
+    font-weight: 700;
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+    border-radius: 25px;
+    padding: 3px 5px;
+    height: 6vh;
+    width: 9vw;
+    transition: 300ms;
+    /* box-shadow: 0px 42px 67px -22px rgba(0,0,0,0.75); */
+    box-shadow: 0px 5px 25px -10px hsl(12, 89%, 65%);
+
+
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+li{
+    list-style-type: none;
+}
+
+br{
+    margin-top: 20px;
+}
+/* styling the header */
+header{
+    display: flex;
+    margin: 3% 10%;
+}
+
+header svg{
+    margin-top: 1%;
+    margin-right: 15%;
+
+}
+nav{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+}
+nav li{
+    margin-right: 15%;
+}
+nav button{
+    margin-left: 130%;
+    margin-top: -25px;
+}
+
+
+/* The main body */
+.main_body{
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 10% 0% 10%;
+}
+
+.body_par{
+    margin-top: 3%;
+}
+.body_par button{
+    margin-top: 10px;
+}
+
+/* under the body part */
+.under_body{
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.under_body ul{
+    margin-left: 15%;
+}
+
+.under_body li{
+    display: flex;
+}
+
+.num{
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 25px;
+    margin-top: 12px;
+    /* margin-bottom: 100px; */
+    margin-bottom: 20%;
+    margin-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* The reviews part */
+.reviews{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.review_cards_position{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* min-height: 100px; */
+}
+
+.review_cards_position::-webkit-scrollbar{
+    width: 0;
+}
+
+.card{
+    background-color: hsl(0, 0%, 98%);
+    margin-top: 50px;
+    margin-right: 2%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    min-width: 450px;
+}
+
+.card img{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin-top: -40px;
+}
+
+/* Below the reviews part */
+.get_started{
+    background-color: hsl(12, 88%, 59%);
+    background-image: url(bg-simplify-section-desktop-get-started.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.get_started h2{
+    color: white;
+}
+
+.get_started button{
+    color: hsl(12, 88%, 59%);
+    background-color: white;
+    margin-top: 75px;
+}
+
+.get_started button:hover{
+    opacity: 1;
+    color: hsl(11, 67%, 90%);
+}
+
+/* The footer paart */
+footer{
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(233, 12%, 13%);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    color: hsl(0, 0%, 98%);
+}
+
+footer a:hover{
+    color: hsl(12, 88%, 59%);
+}
+
+#social_links{
+    display: flex;
+    margin-left: -40px;
+    margin-top: 75px;
+}
+
+.social_link{
+    margin-right: 10px;
+}
+
+footer li{
+    margin-bottom: 20px;
+}
+/* form */
+#form{
+    display: flex;
+    /* margin-bottom: 60px; */
+}
+
+#email{
+    font-size: 1em;
+    border-radius: 25px;
+    padding: 15px 1%;
+    margin-right: 2%;
+}
+
+#email::placeholder{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-left: 10px;
+    color: hsl(227, 12%, 61%);
+}
+
+#email:focus{
+    outline: none;
+}
+
+#email:focus::placeholder{
+    color: transparent;
+}
+
+#submit{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: hsl(0, 0%, 98%);
+    font-weight: 700;
+    background-color: hsl(12, 88%, 59%);
+    border: none;
+    border-radius: 25px;
+    padding: 3px 5px;
+    height: 6vh;
+    width: 4vw;
+    transition: 300ms;
+}
+
+#submit:hover{
+    background-color:  hsl(12, 84%, 71%);
+}
+
+footer small{
+    color: hsl(227, 12%, 61%);
+}
+
+
+
+/* when there is no email is provided or the email is in the wrong form */
+#email1{
+    font-size: 1em;
+    border-radius: 25px;
+    padding: 15px 1%;
+    margin-right: 2%;
+}
+#email1::placeholder{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-left: 10px;
+    color: red;
+}
+#email1:focus{
+    outline: none;
+}
+#email1:focus::placeholder{
+    color: transparent;
+}
+
+#error_message{
+    color: red;
+}
+
+#confirm_messge{
+    color: rgb(56, 227, 56);
+}
